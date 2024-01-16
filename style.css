@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300;400&display=swap');
+
+*{
+    margin: 0px; padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 100%;
+    background-color: #92a8d1;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #555;
+    padding: 10px;
+	
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.nav-logo{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 19px;
+}
+
+.flex-r{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+		  
+.flex-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+	position:relative;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: #001721;
+    color: #fff;
+}
+
+main{
+    width: 100%;
+    height:90vh;
+}
+
+.main-img{
+    display: none;
+}
+.main-img img{
+    width:800px;
+	height: 500px
+}
+
+
+.lg-head{
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: Blue;
+}
+.m-head{
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.para{
+    font-size: 16px;
+    margin: 20px 0px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    max-width: 450px;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    padding: 10px 12px;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #001721;
+    border: 1px solid transparent;
+    transition: all 0.14s linear;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    font-weight: 500;
+}
+.image {
+		  display: block;
+		  width: 100%;
+		  height: auto;
+		}
+		
+
+.overlay {
+		position: absolute; 
+		top:0;
+		bottom: 0; 
+		left: 0;
+		right: 0;
+		background: rgba(0, 0, 0, 0.5); 
+		width: 100%;
+		height: 100%;
+		transition: .3s ease;
+		opacity:0;
+		}
+.container:hover .overlay {
+		opacity: 1;
+}
+		
+.text{
+		color: white;
+		font-size: 20px;
+		position: absolute; 
+		top:50%;
+		left:50%;
+		text-align: center;
+		-webkit-transform: translate(-50%, -50%); 
+		-ms-transform: translate(-50%, -50%); 
+		transform: translate(-50%, -50%);
+		  
+}
+
+.bg-color{
+    background-color: #A35CE6;
+}
+
+section {
+            padding: 30px;
+            text-align: center;
+        }
+form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+form input,
+form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+		
+
+footer{
+	
+    gap: 10px 0px;
+    height: 10vh;
+}
+footer img {
+            max-width: 100px;
+            height: auto;
+}
+.social-link{
+    gap: 0px 25px;
+}
+.social-link a i{
+    color: #fff;
+    font-size: 25px;
+    transition: all 0.2s linear;
+}
+
+.social-link a i:hover{
+    transform: translateY(-7px);
+}
+
+.dev-info a{
+    background-color: #fff;
+}
+
+
+
+@media (min-width:448px){
+    .container{
+        padding: 10px 30px;
+    }
+    
+    .lg-head{
+        font-size: 40px;
+    }
+    .m-head{
+        font-size: 28px;
+    }
+}
+
+@media (min-width:600px){
+    .container{
+        padding: 10px 50px;
+    }
+
+    main{
+        justify-content: flex-start !important;
+    }
+    .main-text{
+        align-items: flex-start;
+    }
+    .lg-head{
+        font-size: 45px;
+    }
+    .m-head{
+        font-size: 30px;
+    }
+    .para{
+        text-align: left;
+        max-width: 330px;
+    }
+    footer{
+        flex-direction: row !important;
+        justify-content: space-between !important;
+    }
+}
+
+@media (min-width:760px){
+    main{
+        justify-content: space-between !important;
+    }
+    .main-img{
+        display: flex;
+    }
+    .main-img img{
+        width: 300px;
+    }
+    .lg-head{
+        font-size: 45px;
+    }
+    .m-head{
+        font-size: 30px;
+    }
+    .para{
+        max-width: 450px;
+    }
+}
+
+@media (min-width:960px){
+    .container{
+        padding: 10px 60px;
+    }
+    .main-img img{
+        width: 500px;
+    }
+    .lg-head{
+        font-size: 50px;
+    }
+    
+}
